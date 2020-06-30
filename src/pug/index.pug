@@ -27,7 +27,7 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container
-                a.navbar-brand.js-scroll-trigger(href='#page-top') Start Bootstrap
+                a.navbar-brand.js-scroll-trigger(href='#page-top') Cloud Parlour
                 button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars
@@ -36,7 +36,7 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#about') About
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#projects') Projects
+                            a.nav-link.js-scroll-trigger(href='#projects') Services
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#signup') Contact
 
@@ -44,21 +44,34 @@ html(lang='en')
         header.masthead
             .container.d-flex.h-100.align-items-center
                 .mx-auto.text-center
-                    h1.mx-auto.my-0.text-uppercase Grayscale
-                    h2.text-white-50.mx-auto.mt-2.mb-5 A free, responsive, one page Bootstrap theme created by Start Bootstrap.
+                    h1.mx-auto.my-0.text-uppercase Cloud Parlour
+                    h2.text-white-50.mx-auto.mt-2.mb-5 Cloud Architects, Engineers and Authorised Trainers solving all your cloud needs.
                     a.btn.btn-primary.js-scroll-trigger(href='#about') Get Started
 
-        // About
+        // About Section GCP 
         section#about.about-section.text-center
             .container
                 .row
                     .col-lg-8.mx-auto
-                        h2.text-white.mb-4 Built with Bootstrap 4
+                        h2.text-white.mb-4 Google Cloud Platform(GCP)
                         p.text-white-50
-                            | Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on 
-                            a(href='https://startbootstrap.com/template-overviews/grayscale/') the preview page
-                            | . The theme is open source, and you can use it for any purpose, personal or commercial.
-                img.img-fluid(src='assets/img/ipad.png', alt='')
+                            | We are experts on 
+                            a(href='https://cloud.google.com/') Google Cloud Platform
+                            |   who have amassed a wealth of experience on projects right at the top of the Google Cloud Playlist
+                img.img-fluid(src='assets/img/super_cloud.png', alt='')
+
+        // About Section Azure
+        section#about.about-section.text-center
+            .container
+                .row
+                    .col-lg-8.mx-auto
+                        h2.text-white.mb-4 Azure
+                        p.text-white-50
+                            | We help you create solutions today that adapt for tomorrow with
+                            a(href='https://azure.microsoft.com/en-gb/') Microsoft Azure
+                            |  . Invent with purpose
+                img.img-fluid(src='assets/img/Microsoft_Azure_Logo.png', alt='')
+
 
         // Projects
         section#projects.projects-section.bg-light
@@ -71,7 +84,7 @@ html(lang='en')
                         .featured-text.text-center.text-lg-left
                             h4 Shoreline
                             p.text-black-50.mb-0
-                                | Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
+                                | Better business outcomes with your data. Whether its migrating to the Cloud, Advanced Analytics or Architecture and Design, the Cloud Parlour is your place to be. We are partners who tailor solutions to the need!
                 // Project One Row
                 .row.justify-content-center.no-gutters.mb-5.mb-lg-0
                     .col-lg-6
@@ -80,9 +93,9 @@ html(lang='en')
                         .bg-black.text-center.h-100.project
                             .d-flex.h-100
                                 .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Misty
+                                    h4.text-white Strategty & Consulting
                                     p.mb-0.text-white-50
-                                        | An example of where you can put an image of a project, or anything else, along with a description.
+                                        | We look at your current environment and evaluate what is required to truely unlock the power of Cloud
                                     hr.d-none.d-lg-block.mb-0.ml-0
                 // Project Two Row
                 .row.justify-content-center.no-gutters
@@ -92,10 +105,44 @@ html(lang='en')
                         .bg-black.text-center.h-100.project
                             .d-flex.h-100
                                 .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white Mountains
+                                    h4.text-white Cloud Migration
                                     p.mb-0.text-white-50
-                                        | Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!
+                                        | We've been involved in some of the most interesting Cloud Migrations. Move your business critical systems, apps and databases rapidly and seamlessly
                                     hr.d-none.d-lg-block.mb-0.mr-0
+                // Project Three Row 
+                .row.justify-content-center.no-gutters.mb-5.mb-lg-0
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='')
+                    .col-lg-6
+                        .bg-black.text-center.h-100.project
+                            .d-flex.h-100
+                                .project-text.w-100.my-auto.text-center.text-lg-left
+                                    h4.text-white Cloud Security
+                                    p.mb-0.text-white-50
+                                        | We take Cloud Security seriously. We've gone through the effort of training our people on industry best practices, complicance, data protection and policy management
+                                    hr.d-none.d-lg-block.mb-0.ml-0
+                // Project Four Row
+                .row.justify-content-center.no-gutters
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/demo-image-02.jpg', alt='')
+                    .col-lg-6.order-lg-first
+                        .bg-black.text-center.h-100.project
+                            .d-flex.h-100
+                                .project-text.w-100.my-auto.text-center.text-lg-right
+                                    h4.text-white Big Data & AI
+                                    p.mb-0.text-white-50
+                                        | Truely unlcok the power of your data. Our PHD Bods help you put the algorithm to the data!
+                // Project Three Row 
+                .row.justify-content-center.no-gutters.mb-5.mb-lg-0
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='')
+                    .col-lg-6
+                        .bg-black.text-center.h-100.project
+                            .d-flex.h-100
+                                .project-text.w-100.my-auto.text-center.text-lg-left
+                                    h4.text-white Automation & Operations
+                                    p.mb-0.text-white-50
+                                        | Manual work is the thing of past. Automate your infrastructure, operations, pipelines and processes to reap the benefits of the Cloud. Technologies like Kubernetes, Composer, Terraform and Ansible help you really run it like a real boss!
 
         // Signup
         section#signup.signup-section
@@ -118,7 +165,7 @@ html(lang='en')
                                 i.fas.fa-map-marked-alt.text-primary.mb-2
                                 h4.text-uppercase.m-0 Address
                                 hr.my-4
-                                .small.text-black-50 4923 Market Street, Orlando FL
+                                .small.text-black-50 151 Grays Inn Road, London WC1X 8UB
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
@@ -126,14 +173,14 @@ html(lang='en')
                                 h4.text-uppercase.m-0 Email
                                 hr.my-4
                                 .small.text-black-50
-                                    a(href='#!') hello@yourdomain.com
+                                    a(href='#!') adam@cloudparlour.com
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
                                 i.fas.fa-mobile-alt.text-primary.mb-2
                                 h4.text-uppercase.m-0 Phone
                                 hr.my-4
-                                .small.text-black-50 +1 (555) 902-8832
+                                .small.text-black-50 +44 7393 374999‬
                 .social.d-flex.justify-content-center
                     a.mx-2(href='#!')
                         i.fab.fa-twitter
@@ -145,7 +192,7 @@ html(lang='en')
         // Footer
         footer.footer.bg-black.small.text-center.text-white-50
             .container
-                | Copyright © Your Website 2020
+                | Copyright © Cloud Parlour 2020
 
         // Bootstrap core JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
