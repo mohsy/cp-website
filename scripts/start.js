@@ -3,11 +3,6 @@ const upath = require('upath');
 
 const browserSyncPath = upath.resolve(upath.dirname(__filename), '../node_modules/.bin/browser-sync');
 
-//const express = require('express');
-//const path = require('path');
-//const app = express();
-const port = process.env.PORT || 8080;
-
 concurrently([
     { command: 'node scripts/sb-watch.js', name: 'SB_WATCH', prefixColor: 'bgBlue.bold' },
     {
@@ -28,5 +23,3 @@ function failure() {
     console.log('Failure');
 }
 
-//Start the server
-listen(port, () => console.log(`Monolith listening on port ${port}!`));
