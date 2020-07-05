@@ -3,9 +3,9 @@ const upath = require('upath');
 
 const browserSyncPath = upath.resolve(upath.dirname(__filename), '../node_modules/.bin/browser-sync');
 
-const express = require('express');
-const path = require('path');
-const app = express();
+//const express = require('express');
+//const path = require('path');
+//const app = express();
 const port = process.env.PORT || 8080;
 
 concurrently([
@@ -29,4 +29,4 @@ function failure() {
 }
 
 //Start the server
-app.listen(port, () => console.log(`Monolith listening on port ${port}!`));
+listen(port, () => console.log(`Monolith listening on port ${port}!`));
