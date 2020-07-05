@@ -3,6 +3,7 @@ const upath = require('upath');
 
 const browserSyncPath = upath.resolve(upath.dirname(__filename), '../node_modules/.bin/browser-sync');
 
+const app = express();
 const port = process.env.PORT || 8080;
 
 concurrently([
