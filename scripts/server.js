@@ -16,22 +16,9 @@ const browserSyncPath = upath.resolve(upath.dirname(__filename), '../node_module
 // App
 const path = require("path");
 const app = express();
-//app.get('/', (req, res) => {
-  //res.send('Hello World');
-//});
-
-//Serve website
-app.use(express.static(path.join(__dirname, "dist/index.html", "public")));
-//app.use("dist/html.index", express.static(path.join(__dirname, "public")))
-
-
-//Client side routing fix on page refresh or direct browsing to non-root directory
-app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "..",  "public", "index.html"), err => {
-    if (err) {
-      res.status(500).send(err);
-    }
-
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
 
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
