@@ -20,11 +20,10 @@ const app = express();
   //res.send('Hello World');
 //});
 
+//Serve website
 app.use(express.static(path.join(__dirname, "dist/html.index", "public")));
 
-//Serve website
 
-// From Original start.js script 
 
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
