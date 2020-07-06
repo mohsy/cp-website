@@ -13,7 +13,7 @@ const upath = require('upath');
 const browserSyncPath = upath.resolve(upath.dirname(__filename), '../node_modules/.bin/browser-sync');
 
 // App
-//const app = express();
+const app = express();
 //app.get('/', (req, res) => {
 //  res.send('Hello World');
 //});
