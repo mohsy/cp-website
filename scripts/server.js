@@ -22,7 +22,7 @@ const app = express();
 
 //Serve website
 app.use(express.static(path.join(__dirname, "dist/index.html", "public")));
-#app.use("dist/html.index", express.static(path.join(__dirname, "public")))
+//app.use("dist/html.index", express.static(path.join(__dirname, "public")))
 
 
 
