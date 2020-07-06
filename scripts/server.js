@@ -20,7 +20,7 @@ const app = express();
   //res.send('Hello World');
 //});
 
-app.use(express.static(path.join(__dirname, "dests/html.index", "public")));
+app.use(express.static(path.join(__dirname, "dist/html.index", "public")));
 
 //Serve website
 
