@@ -28,7 +28,7 @@ RUN npm install
 #RUN npm ci --only=production
 
 # Bundle app source
-COPY ./usr/src/app
+COPY . /usr/src/app
 
 EXPOSE 8080
 CMD [ "node", "scripts/start.js" ]
