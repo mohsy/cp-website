@@ -17,7 +17,7 @@ const browserSyncPath = upath.resolve(upath.dirname(__filename), '../node_module
 const path = require("path");
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  res.send('dist/index.html');
 });
 
 app.listen(PORT, HOST);
