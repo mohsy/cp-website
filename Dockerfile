@@ -31,4 +31,4 @@ RUN npm install
 COPY . .
 
 EXPOSE 8080
-CMD [ "node", "/usr/src/app/scripts/start.js" ]
+CMD [ "node", "/usr/src/app/scripts/server.js" ]
